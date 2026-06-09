@@ -1,0 +1,41 @@
+{
+  "parent": "mythic_charms:story/backward_drift_twisted",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:charm_of_arrow_dance"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.arrow_dance_reflect.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.arrow_dance_reflect.description"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "arrow": { "trigger": "minecraft:impossible" },
+    "fireball": { "trigger": "minecraft:impossible" },
+    "small_fireball": { "trigger": "minecraft:impossible" },
+    "dragon_fireball": { "trigger": "minecraft:impossible" },
+    "llama_spit": { "trigger": "minecraft:impossible" },
+    "shulker_bullet": { "trigger": "minecraft:impossible" },
+    "snowball": { "trigger": "minecraft:impossible" },
+    "potion": { "trigger": "minecraft:impossible" },
+    "trident": { "trigger": "minecraft:impossible" },
+    "wind_charge": { "trigger": "minecraft:impossible" },
+    "wither_skull": { "trigger": "minecraft:impossible" }
+  },
+  "requirements": [
+    ["arrow"],
+    ["fireball"],
+    ["small_fireball"],
+    ["dragon_fireball"],
+    ["llama_spit"],
+    ["shulker_bullet"],
+    ["snowball"],
+    ["potion"],
+    ["trident"],
+    ["wind_charge"],
+    ["wither_skull"]
+  ]
+}

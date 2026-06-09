@@ -1,0 +1,172 @@
+{
+  "parent": "mythic_charms:story/rune",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:charm_base"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.all_charms.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.all_charms.description"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "charm_of_arrow_dance": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_arrow_dance" }
+        ]
+      }
+    },
+    "charm_of_backward_drift": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_backward_drift" }
+        ]
+      }
+    },
+    "charm_of_battle_fury": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_battle_fury" }
+        ]
+      }
+    },
+    "charm_of_blazing_embrace": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_blazing_embrace" }
+        ]
+      }
+    },
+    "charm_of_collector_gift": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_collector_gift" }
+        ]
+      }
+    },
+    "charm_of_drowned_freedom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_drowned_freedom" }
+        ]
+      }
+    },
+    "charm_of_earth_order": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_earth_order" }
+        ]
+      }
+    },
+    "charm_of_echoing_wrath": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_echoing_wrath" }
+        ]
+      }
+    },
+    "charm_of_feathered_grace": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_feathered_grace" }
+        ]
+      }
+    },
+    "charm_of_mountain_stance": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_mountain_stance" }
+        ]
+      }
+    },
+    "charm_of_night_guardian": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_night_guardian" }
+        ]
+      }
+    },
+    "charm_of_nullified_impact": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_nullified_impact" }
+        ]
+      }
+    },
+    "charm_of_shrouded_existence": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_shrouded_existence" }
+        ]
+      }
+    },
+    "charm_of_sundering_strike": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_sundering_strike" }
+        ]
+      }
+    },
+    "charm_of_twisted_lifeblood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_twisted_lifeblood" }
+        ]
+      }
+    },
+    "charm_of_warped_ground": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_warped_ground" }
+        ]
+      }
+    },
+    "charm_of_weightless_flow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": "mythic_charms:charm_of_weightless_flow" }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["charm_of_arrow_dance"],
+    ["charm_of_backward_drift"],
+    ["charm_of_battle_fury"],
+    ["charm_of_blazing_embrace"],
+    ["charm_of_collector_gift"],
+    ["charm_of_drowned_freedom"],
+    ["charm_of_earth_order"],
+    ["charm_of_echoing_wrath"],
+    ["charm_of_feathered_grace"],
+    ["charm_of_mountain_stance"],
+    ["charm_of_night_guardian"],
+    ["charm_of_nullified_impact"],
+    ["charm_of_shrouded_existence"],
+    ["charm_of_sundering_strike"],
+    ["charm_of_twisted_lifeblood"],
+    ["charm_of_warped_ground"],
+    ["charm_of_weightless_flow"]
+  ]
+}

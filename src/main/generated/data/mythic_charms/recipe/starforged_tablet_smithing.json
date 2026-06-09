@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:nether_star"
+  },
+  "base": {
+    "item": "mythic_charms:netherite_tablet"
+  },
+  "result": {
+    "count": 1,
+    "id": "mythic_charms:starforged_tablet"
+  },
+  "template": {
+    "item": "mythic_charms:carving_template"
+  }
+}

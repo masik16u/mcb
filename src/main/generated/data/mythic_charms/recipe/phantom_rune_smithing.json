@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:phantom_membrane"
+  },
+  "base": {
+    "item": "mythic_charms:blank_rune"
+  },
+  "result": {
+    "count": 1,
+    "id": "mythic_charms:phantom_rune"
+  },
+  "template": {
+    "item": "mythic_charms:carving_template"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "parent": "mythic_charms:story/core_and_template",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:resonance_inscriber"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.charm_quick_reshape.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.charm_quick_reshape.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

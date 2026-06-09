@@ -1,0 +1,93 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "token.ap", "hidden": false },
+              "mythic_charms:stone_page_texture": 2
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "token.cs", "hidden": false },
+              "mythic_charms:stone_page_texture": 2
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "token.dd", "hidden": false },
+              "mythic_charms:stone_page_texture": 2
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "token.dc", "hidden": false },
+              "mythic_charms:stone_page_texture": 2
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "token.fw", "hidden": false },
+              "mythic_charms:stone_page_texture": 2
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "token.il", "hidden": false },
+              "mythic_charms:stone_page_texture": 2
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "token.ns", "hidden": false },
+              "mythic_charms:stone_page_texture": 2
+            }
+          }]
+        }
+      ]
+    }
+  ]
+}

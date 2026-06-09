@@ -1,0 +1,25 @@
+{
+  "parent": "mythic_charms:story/ritual_site",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:puzzle_box"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.puzzle_box.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.puzzle_box.description"
+    },
+    "frame": "goal"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

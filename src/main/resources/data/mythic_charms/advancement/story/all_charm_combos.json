@@ -1,0 +1,53 @@
+{
+  "parent": "mythic_charms:story/all_charm_abilities",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:charm_base"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.all_charm_combos.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.all_charm_combos.description"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "ad_ms": { "trigger": "minecraft:impossible" },
+    "bd_tl": { "trigger": "minecraft:impossible" },
+    "bf_eo": { "trigger": "minecraft:impossible" },
+    "bf_ng": { "trigger": "minecraft:impossible" },
+    "bf_tl": { "trigger": "minecraft:impossible" },
+    "cg_ni": { "trigger": "minecraft:impossible" },
+    "cg_wf": { "trigger": "minecraft:impossible" },
+    "df_be": { "trigger": "minecraft:impossible" },
+    "df_wf": { "trigger": "minecraft:impossible" },
+    "eo_be": { "trigger": "minecraft:impossible" },
+    "ew_be": { "trigger": "minecraft:impossible" },
+    "ew_bf": { "trigger": "minecraft:impossible" },
+    "ew_ss": { "trigger": "minecraft:impossible" },
+    "ni_se": { "trigger": "minecraft:impossible" },
+    "ss_ms": { "trigger": "minecraft:impossible" },
+    "wg_df": { "trigger": "minecraft:impossible" },
+    "wg_fg": { "trigger": "minecraft:impossible" }
+  },
+  "requirements": [
+    ["ad_ms"],
+    ["bd_tl"],
+    ["bf_eo"],
+    ["bf_ng"],
+    ["bf_tl"],
+    ["cg_ni"],
+    ["cg_wf"],
+    ["df_be"],
+    ["df_wf"],
+    ["eo_be"],
+    ["ew_be"],
+    ["ew_bf"],
+    ["ew_ss"],
+    ["ni_se"],
+    ["ss_ms"],
+    ["wg_df"],
+    ["wg_fg"]
+  ]
+}

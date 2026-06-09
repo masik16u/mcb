@@ -1,0 +1,14 @@
+{
+  "values": [
+    "#minecraft:is_taiga",
+    "#minecraft:is_jungle",
+    "#minecraft:is_forest",
+    "#minecraft:is_savanna",
+    "minecraft:meadow",
+    "minecraft:cherry_grove",
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp"
+  ]
+}

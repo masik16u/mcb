@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mythic_charms:charm_base"
+    },
+    {
+      "item": "mythic_charms:resonance_inscriber"
+    },
+    {
+      "item": "mythic_charms:phantom_rune"
+    },
+    {
+      "item": "mythic_charms:breeze_rune"
+    },
+    {
+      "item": "mythic_charms:echo_rune"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mythic_charms:charm_of_feathered_grace"
+  }
+}

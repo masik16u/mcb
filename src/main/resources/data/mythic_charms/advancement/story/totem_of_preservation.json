@@ -1,0 +1,24 @@
+{
+  "parent": "mythic_charms:story/ritual_site",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:totem_of_preservation"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.totem_of_preservation.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.totem_of_preservation.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

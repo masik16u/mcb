@@ -1,0 +1,25 @@
+{
+  "parent": "mythic_charms:story/nullified_impact_mountain",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:charm_of_drowned_freedom"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.drowned_freedom_speed.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.drowned_freedom_speed.description"
+    },
+    "frame": "goal"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

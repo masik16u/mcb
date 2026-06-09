@@ -1,0 +1,25 @@
+{
+  "parent": "mythic_charms:story/drowned_freedom_extinguish",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:charm_of_battle_fury"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.battle_fury_negative.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.battle_fury_negative.description"
+    },
+    "frame": "goal"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

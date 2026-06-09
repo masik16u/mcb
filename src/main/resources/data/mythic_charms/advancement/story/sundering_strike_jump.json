@@ -1,0 +1,25 @@
+{
+  "parent": "mythic_charms:story/charm",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:charm_of_sundering_strike"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.sundering_strike_jump.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.sundering_strike_jump.description"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

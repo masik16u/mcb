@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:amethyst_core",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:diamond_core",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:archaeology/puzzle_pieces",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:archaeology/stone_pages",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:puzzle_box",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:totem_of_preservation",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:blank_rune",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:carving_template",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

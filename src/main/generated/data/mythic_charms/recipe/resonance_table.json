@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "C": {
+      "item": "mythic_charms:amethyst_core"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:smooth_stone"
+    },
+    "T": {
+      "item": "minecraft:chiseled_tuff"
+    }
+  },
+  "pattern": [
+    "AIA",
+    "TCT",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mythic_charms:resonance_table"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "guide.totem", "hidden": false },
+              "mythic_charms:stone_page_texture": 3
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "guide.charm_shape_1", "hidden": false },
+              "mythic_charms:stone_page_texture": 3
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "guide.charm_shape_2", "hidden": false },
+              "mythic_charms:stone_page_texture": 3
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "guide.charm_shape_3", "hidden": false },
+              "mythic_charms:stone_page_texture": 3
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "guide.combination", "hidden": false },
+              "mythic_charms:stone_page_texture": 3
+            }
+          }]
+        }
+      ]
+    }
+  ]
+}

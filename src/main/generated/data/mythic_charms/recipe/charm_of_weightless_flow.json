@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mythic_charms:charm_base"
+    },
+    {
+      "item": "mythic_charms:resonance_inscriber"
+    },
+    {
+      "item": "mythic_charms:ancient_rune"
+    },
+    {
+      "item": "mythic_charms:shulker_rune"
+    },
+    {
+      "item": "mythic_charms:breeze_rune"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mythic_charms:charm_of_weightless_flow"
+  }
+}

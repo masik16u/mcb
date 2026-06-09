@@ -1,0 +1,24 @@
+{
+  "parent": "mythic_charms:story/charm",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:charm_of_nullified_impact"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.nullified_impact_mountain.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.nullified_impact_mountain.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

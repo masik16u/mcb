@@ -1,0 +1,24 @@
+{
+  "parent": "mythic_charms:story/backward_drift_void",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:charm_of_drowned_freedom"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.drowned_freedom_extinguish.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.drowned_freedom_extinguish.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

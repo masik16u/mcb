@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "C": {
+      "item": "mythic_charms:amethyst_core"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DCD",
+    "DAD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mythic_charms:diamond_tablet"
+  }
+}

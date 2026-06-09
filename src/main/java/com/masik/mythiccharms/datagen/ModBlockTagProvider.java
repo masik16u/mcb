@@ -1,0 +1,27 @@
+package com.masik.mythiccharms.datagen;
+
+import com.masik.mythiccharms.block.ModBlocks;
+import com.masik.mythiccharms.util.ModTags;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Blocks;
+import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
+
+import java.util.concurrent.CompletableFuture;
+
+public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
+    public ModBlockTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, registriesFuture);
+    }
+
+    @Override
+    protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.RESONANCE_TABLE);
+
+        getOrCreateTagBuilder(ModTags.SUSPICIOUS_BLOCKS)
+                .add(Blocks.SUSPICIOUS_GRAVEL)
+                .add(Blocks.SUSPICIOUS_SAND);
+    }
+}

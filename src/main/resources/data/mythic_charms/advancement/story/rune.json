@@ -1,0 +1,119 @@
+{
+  "parent": "mythic_charms:story/core_and_template",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:blank_rune"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.rune.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.rune.description"
+    }
+  },
+  "criteria": {
+    "ancient_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:ancient_rune"
+          }
+        ]
+      }
+    },
+    "blaze_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:blaze_rune"
+          }
+        ]
+      }
+    },
+    "breeze_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:breeze_rune"
+          }
+        ]
+      }
+    },
+    "echo_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:echo_rune"
+          }
+        ]
+      }
+    },
+    "nautilus_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:nautilus_rune"
+          }
+        ]
+      }
+    },
+    "phantom_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:phantom_rune"
+          }
+        ]
+      }
+    },
+    "prismarine_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:prismarine_rune"
+          }
+        ]
+      }
+    },
+    "shulker_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:shulker_rune"
+          }
+        ]
+      }
+    },
+    "slime_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:slime_rune"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ancient_rune",
+      "blaze_rune",
+      "breeze_rune",
+      "echo_rune",
+      "nautilus_rune",
+      "phantom_rune",
+      "prismarine_rune",
+      "shulker_rune",
+      "slime_rune"
+    ]
+  ]
+}

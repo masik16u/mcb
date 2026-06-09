@@ -1,0 +1,31 @@
+{
+  "parent": "mythic_charms:story/core_and_template",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:amethyst_brush"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.amethyst_brush.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.amethyst_brush.description"
+    }
+  },
+  "criteria": {
+    "amethyst_brush": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:amethyst_brush"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "amethyst_brush"
+    ]
+  ]
+}

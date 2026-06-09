@@ -1,0 +1,32 @@
+{
+  "parent": "mythic_charms:story/netherite_tablet",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:starforged_tablet"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.starforged_tablet.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.starforged_tablet.description"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "starforged_tablet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:starforged_tablet"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "starforged_tablet"
+    ]
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "required": true,
+  "package": "com.masik.mythiccharms.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "archaeology.AmethystBrushMixin",
+    "archaeology.TotemPlayerMixin",
+    "charms.ArrowDanceEntityMixin",
+    "charms.ArrowDancePlayerMixin",
+    "charms.BackwardDriftServerMixin",
+    "charms.BattleFuryPlayerMixin",
+    "charms.BlazingEmbracePlayerMixin",
+    "charms.CollectorGiftItemMixin",
+    "charms.CollectorGiftServerMixin",
+    "charms.DrownedFreedomConduitMixin",
+    "charms.DrownedFreedomEntityMixin",
+    "charms.DrownedFreedomPotionMixin",
+    "charms.EarthOrderBlockMixin",
+    "charms.EarthOrderPlayerMixin",
+    "charms.EchoingWrathPlayerMixin",
+    "charms.FeatheredGraceServerMixin",
+    "charms.MountainStanceEntityMixin",
+    "charms.MountainStanceExplosionMixin",
+    "charms.MountainStanceLivingMixin",
+    "charms.NightGuardianPhantomMixin",
+    "charms.NightGuardianSpawnerMixin",
+    "charms.NullifiedImpactEntityMixin",
+    "charms.NullifiedImpactShriekerMixin",
+    "charms.ShroudedExistenceLivingMixin",
+    "charms.ShroudedExistenceServerMixin",
+    "charms.SunderingStrikeLivingMixin",
+    "charms.SunderingStrikeServerMixin",
+    "charms.TwistedLifebloodLivingMixin",
+    "charms.TwistedLifebloodPoisonMixin",
+    "charms.TwistedLifebloodRegenMixin",
+    "charms.WarpedGroundLivingMixin",
+    "charms.WarpedGroundPlayerMixin",
+    "charms.WeightlessFlowEntityMixin",
+    "tokens.TokenPlayerMixin",
+    "tokens.TokenServerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "client.CharmStackMixin",
+    "client.TabletRendererMixin"
+  ]
+}

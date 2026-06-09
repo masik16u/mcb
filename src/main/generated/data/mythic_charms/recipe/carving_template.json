@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mythic_charms:blank_rune"
+    },
+    {
+      "item": "mythic_charms:carving_template"
+    },
+    {
+      "item": "mythic_charms:resonance_inscriber"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "mythic_charms:carving_template"
+  }
+}

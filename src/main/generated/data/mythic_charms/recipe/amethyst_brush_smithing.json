@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mythic_charms:amethyst_core"
+  },
+  "base": {
+    "item": "minecraft:brush"
+  },
+  "result": {
+    "count": 1,
+    "id": "mythic_charms:amethyst_brush"
+  },
+  "template": {
+    "item": "mythic_charms:carving_template"
+  }
+}

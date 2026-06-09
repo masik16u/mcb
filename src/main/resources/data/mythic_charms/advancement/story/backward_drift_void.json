@@ -1,0 +1,24 @@
+{
+  "parent": "mythic_charms:story/weightless_flow_jump",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:charm_of_backward_drift"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.backward_drift_void.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.backward_drift_void.description"
+    }
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

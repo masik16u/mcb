@@ -1,0 +1,72 @@
+{
+  "targets": "mythic_charms:charm_of_echoing_wrath",
+  "components": {
+    "mythic_charms:shape_variants": {
+      "variants": [
+        {
+          "shape": "0000001010011100000000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000100011100010000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000100011100001000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000100011100100000000",
+          "x_origin": 2,
+          "y_origin": 2
+        }
+      ]
+    },
+    "mythic_charms:resonance_shape": {
+      "shape": "0000001010011100000000000",
+      "x_origin": 2,
+      "y_origin": 2
+    },
+    "mythic_charms:resonance_constraints": {
+      "is_reforgeable": true,
+      "is_quick_reforgeable": true,
+      "is_rotatable": true,
+      "start_grid": "1111110101000000010011111",
+      "required_tiles": 5,
+      "required_material_tag": "mythic_charms:charm_reforge_material",
+      "must_be_joined": true
+    },
+    "mythic_charms:charm_abilities": {
+      "echoing_wrath": {
+        "radius": 2.5,
+        "damage_multiplier": 0.5,
+        "velocity_multiplier": 0.1,
+        "vertical_addend": 0.1
+      }
+    },
+    "mythic_charms:charm_combinations": {
+      "sundering_strike": {
+        "require_adjacent": true,
+        "damage_multiplier": 0.0,
+        "velocity_multiplier": 5.0,
+        "vertical_multiplier": 5.0
+      },
+      "battle_fury": {
+        "require_adjacent": true,
+        "velocity_multiplier": 0.1,
+        "vertical_multiplier": 0.1
+      },
+      "blazing_embrace": {
+        "require_adjacent": true,
+        "damage_multiplier": 0.25,
+        "fire_ticks": 200
+      }
+    },
+    "mythic_charms:color": {
+      "rgb": 4779464
+    }
+  }
+}

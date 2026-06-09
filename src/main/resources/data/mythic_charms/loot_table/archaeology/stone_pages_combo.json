@@ -1,0 +1,213 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.ad_ms", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.bf_eo", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.bf_ng", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.bf_tl", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.cg_ni", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.df_be", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.df_wf", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.wg_df", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.eo_be", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.ew_be", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.ew_bf", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.ew_ss", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.wg_fg", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.ni_se", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.ss_ms", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.bd_tl", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "combination.cg_wf", "hidden": false },
+              "mythic_charms:stone_page_texture": 1
+            }
+          }]
+        }
+      ]
+    }
+  ]
+}

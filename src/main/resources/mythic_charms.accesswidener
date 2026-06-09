@@ -1,0 +1,13 @@
+accessWidener v2 named
+
+accessible method net/minecraft/entity/Entity isBeingRainedOn ()Z
+accessible class net/minecraft/entity/effect/PoisonStatusEffect
+accessible class net/minecraft/entity/effect/RegenerationStatusEffect
+
+accessible field net/minecraft/entity/LivingEntity jumpingCooldown I
+accessible field net/minecraft/entity/LivingEntity jumping Z
+accessible method net/minecraft/entity/LivingEntity getJumpVelocity ()F
+
+accessible field net/minecraft/block/entity/BrushableBlockEntity nextBrushTime J
+
+accessible field net/minecraft/entity/player/PlayerEntity sleepTimer I

@@ -1,0 +1,31 @@
+{
+  "parent": "mythic_charms:story/core_and_template",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:diamond_tablet"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.diamond_tablet.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.diamond_tablet.description"
+    }
+  },
+  "criteria": {
+    "diamond_tablet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:diamond_tablet"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "diamond_tablet"
+    ]
+  ]
+}

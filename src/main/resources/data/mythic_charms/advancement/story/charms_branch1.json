@@ -1,0 +1,18 @@
+{
+  "parent": "mythic_charms:story/battle_fury_negative",
+  "criteria": {
+    "branch": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player":  {
+          "type_specific": {
+            "type": "player",
+            "advancements": {
+              "mythic_charms:story/charm": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

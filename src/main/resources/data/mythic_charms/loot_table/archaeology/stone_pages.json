@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:archaeology/stone_pages_combo",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:archaeology/stone_pages_guide",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:archaeology/stone_pages_lore",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:archaeology/stone_pages_token",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

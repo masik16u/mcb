@@ -1,0 +1,62 @@
+{
+  "targets": "mythic_charms:charm_of_collector_gift",
+  "components": {
+    "mythic_charms:shape_variants": {
+      "variants": [
+        {
+          "shape": "0000001100001000110000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000001100001000011000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000110001000110000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000100011100010000000",
+          "x_origin": 2,
+          "y_origin": 2
+        }
+      ]
+    },
+    "mythic_charms:resonance_shape": {
+      "shape": "0000001100001000110000000",
+      "x_origin": 2,
+      "y_origin": 2
+    },
+    "mythic_charms:resonance_constraints": {
+      "is_reforgeable": true,
+      "is_quick_reforgeable": true,
+      "is_rotatable": true,
+      "start_grid": "1001110001110111000111001",
+      "required_tiles": 5,
+      "required_material_tag": "mythic_charms:charm_reforge_material",
+      "must_be_joined": true
+    },
+    "mythic_charms:charm_abilities": {
+      "collector_gift": {
+        "radius": 4.0,
+        "velocity_multiplier": 0.03
+      }
+    },
+    "mythic_charms:charm_combinations": {
+      "weightless_flow": {
+        "require_adjacent": true,
+        "disable_with_sneaking": true
+      },
+      "nullified_impact": {
+        "require_adjacent": true,
+        "radius": 3.0
+      }
+    },
+    "mythic_charms:color": {
+      "rgb": 4779464
+    }
+  }
+}

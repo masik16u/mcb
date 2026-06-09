@@ -1,0 +1,31 @@
+{
+  "parent": "mythic_charms:story/charm_quick_reshape",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:resonance_table"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.resonance_table.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.resonance_table.description"
+    }
+  },
+  "criteria": {
+    "resonance_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:resonance_table"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "resonance_table"
+    ]
+  ]
+}

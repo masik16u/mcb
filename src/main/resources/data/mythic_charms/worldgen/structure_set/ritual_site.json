@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 89369365,
+    "separation": 8,
+    "spacing": 48
+  },
+  "structures": [
+    {
+      "structure": "mythic_charms:ritual_site",
+      "weight": 1
+    }
+  ]
+}

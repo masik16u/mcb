@@ -1,0 +1,75 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "lore.1", "hidden": true }
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "lore.2", "hidden": true }
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "lore.3", "hidden": true }
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "lore.4", "hidden": true }
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "lore.5", "hidden": true }
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:stone_page",
+          "conditions": [],
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:stone_page": { "content": "lore.6", "hidden": true }
+            }
+          }]
+        }
+      ]
+    }
+  ]
+}

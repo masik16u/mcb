@@ -1,0 +1,9 @@
+{
+  "targets": "mythic_charms:starforged_tablet",
+  "components": {
+    "mythic_charms:tablet_grid": {
+      "shape": "0000000000000000000000000",
+      "acceptable_items_tag": "mythic_charms:tablet_acceptable"
+    }
+  }
+}

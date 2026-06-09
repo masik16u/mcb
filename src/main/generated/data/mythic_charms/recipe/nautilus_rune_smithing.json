@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:nautilus_shell"
+  },
+  "base": {
+    "item": "mythic_charms:blank_rune"
+  },
+  "result": {
+    "count": 1,
+    "id": "mythic_charms:nautilus_rune"
+  },
+  "template": {
+    "item": "mythic_charms:carving_template"
+  }
+}

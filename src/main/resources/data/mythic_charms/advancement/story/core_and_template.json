@@ -1,0 +1,45 @@
+{
+  "parent": "mythic_charms:story/ritual_site",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:carving_template"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.core_and_template.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.core_and_template.description"
+    },
+    "frame": "goal"
+  },
+  "criteria": {
+    "amethyst_core": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:amethyst_core"
+          }
+        ]
+      }
+    },
+    "carving_template": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:carving_template"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "amethyst_core"
+    ],
+    [
+      "carving_template"
+    ]
+  ]
+}

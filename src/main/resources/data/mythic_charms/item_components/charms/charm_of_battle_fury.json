@@ -1,0 +1,74 @@
+{
+  "targets": "mythic_charms:charm_of_battle_fury",
+  "components": {
+    "mythic_charms:shape_variants": {
+      "variants": [
+        {
+          "shape": "0000001010011100000000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000100001100110000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000100011000011000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000110111000000000000",
+          "x_origin": 2,
+          "y_origin": 2
+        }
+      ]
+    },
+    "mythic_charms:resonance_shape": {
+      "shape": "0000001010011100000000000",
+      "x_origin": 2,
+      "y_origin": 2
+    },
+    "mythic_charms:resonance_constraints": {
+      "is_reforgeable": true,
+      "is_quick_reforgeable": true,
+      "is_rotatable": true,
+      "start_grid": "1010110101001001000111111",
+      "required_tiles": 5,
+      "required_material_tag": "mythic_charms:charm_reforge_material",
+      "must_be_joined": true
+    },
+    "mythic_charms:charm_abilities": {
+      "battle_fury": {
+        "vertical_scale": 3.0,
+        "curvature_exponent": 1,
+        "horizontal_shift": 1
+      }
+    },
+    "mythic_charms:charm_combinations": {
+      "night_guardian": {
+        "require_adjacent": true,
+        "vertical_scale": 2.0,
+        "curvature_exponent": 1,
+        "horizontal_shift": 1
+      },
+      "earth_order": {
+        "require_adjacent": true,
+        "vertical_scale": 2.0,
+        "curvature_exponent": 1,
+        "horizontal_shift": 1
+      },
+      "twisted_lifeblood": {
+        "require_adjacent": true,
+        "vertical_scale": -7.0,
+        "curvature_exponent": 1,
+        "horizontal_shift": 0.7,
+        "damage_cap": 2.5
+      }
+    },
+    "mythic_charms:color": {
+      "rgb": 16736592
+    }
+  }
+}

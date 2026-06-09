@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:carving_template"
+        }
+      ]
+    }
+  ]
+}

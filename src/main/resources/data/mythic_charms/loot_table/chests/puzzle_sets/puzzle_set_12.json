@@ -1,0 +1,136 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:puzzle_piece",
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:resonance_shape": {
+                "shape": "0000000100001100000000000",
+                "x_origin": 2,
+                "y_origin": 2
+              },
+              "mythic_charms:color": {
+                "rgb": 7133274
+              }
+            }
+          }]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:puzzle_piece",
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:resonance_shape": {
+                "shape": "0000000000001100011000000",
+                "x_origin": 2,
+                "y_origin": 2
+              },
+              "mythic_charms:color": {
+                "rgb": 5937368
+              }
+            }
+          }]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:puzzle_piece",
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:resonance_shape": {
+                "shape": "0000000100011000001000000",
+                "x_origin": 2,
+                "y_origin": 2
+              },
+              "mythic_charms:color": {
+                "rgb": 5948888
+              }
+            }
+          }]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:puzzle_piece",
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:resonance_shape": {
+                "shape": "0000000000001100100000100",
+                "x_origin": 2,
+                "y_origin": 2
+              },
+              "mythic_charms:color": {
+                "rgb": 5953709
+              }
+            }
+          }]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:puzzle_piece",
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:resonance_shape": {
+                "shape": "0000001100011100000000000",
+                "x_origin": 2,
+                "y_origin": 2
+              },
+              "mythic_charms:color": {
+                "rgb": 14178933
+              }
+            }
+          }]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mythic_charms:puzzle_piece",
+          "functions": [{
+            "function": "minecraft:set_components",
+            "components": {
+              "mythic_charms:resonance_shape": {
+                "shape": "0000001010011100000000000",
+                "x_origin": 2,
+                "y_origin": 2
+              },
+              "mythic_charms:color": {
+                "rgb": 14178933
+              }
+            }
+          }]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mythic_charms",
+	"version": "${version}",
+	"name": "Mythic Charms 2",
+	"description": "Discover various trinkets that can be used in different creative ways",
+	"authors": [
+		"masik16u"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/mythic-charms"
+	},
+	"license": "GNU General Public License v3.0",
+	"icon": "assets/mythic_charms/icon.png",
+	"environment": "*",
+	"accessWidener": "mythic_charms.accesswidener",
+	"entrypoints": {
+		"main": [
+			"com.masik.mythiccharms.MythicCharms"
+		],
+		"fabric-datagen": [
+			"com.masik.mythiccharms.MythicCharmsDataGenerator"
+		]
+	},
+	"mixins": [
+      "mythic_charms.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

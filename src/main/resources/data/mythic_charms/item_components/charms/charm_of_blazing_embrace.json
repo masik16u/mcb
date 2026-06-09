@@ -1,0 +1,58 @@
+{
+  "targets": "mythic_charms:charm_of_blazing_embrace",
+  "components": {
+    "mythic_charms:shape_variants": {
+      "variants": [
+        {
+          "shape": "0000000110011000010000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000001100001100010000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000010001100101000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000001010011100000000000",
+          "x_origin": 2,
+          "y_origin": 2
+        }
+      ]
+    },
+    "mythic_charms:resonance_shape": {
+      "shape": "0000000100011100010000000",
+      "x_origin": 2,
+      "y_origin": 2
+    },
+    "mythic_charms:resonance_constraints": {
+      "is_reforgeable": true,
+      "is_quick_reforgeable": true,
+      "is_rotatable": true,
+      "start_grid": "1010100100100011010111111",
+      "required_tiles": 5,
+      "required_material_tag": "mythic_charms:charm_reforge_material",
+      "must_be_joined": true
+    },
+    "mythic_charms:charm_abilities": {
+      "blazing_embrace": {
+        "require_extinguished": true,
+        "duration": 410
+      }
+    },
+    "mythic_charms:charm_combinations": {
+      "drowned_freedom": {
+        "require_adjacent": true,
+        "duration_addend": 200
+      }
+    },
+    "mythic_charms:color": {
+      "rgb": 15571528
+    }
+  }
+}

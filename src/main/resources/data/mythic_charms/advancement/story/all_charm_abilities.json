@@ -1,0 +1,53 @@
+{
+  "parent": "mythic_charms:story/all_charms",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:charm_base"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.all_charm_abilities.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.all_charm_abilities.description"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "arrow_dance": { "trigger": "minecraft:impossible" },
+    "backward_drift": { "trigger": "minecraft:impossible" },
+    "battle_fury": { "trigger": "minecraft:impossible" },
+    "blazing_embrace": { "trigger": "minecraft:impossible" },
+    "collector_gift": { "trigger": "minecraft:impossible" },
+    "drowned_freedom": { "trigger": "minecraft:impossible" },
+    "earth_order": { "trigger": "minecraft:impossible" },
+    "echoing_wrath": { "trigger": "minecraft:impossible" },
+    "feathered_grace": { "trigger": "minecraft:impossible" },
+    "mountain_stance": { "trigger": "minecraft:impossible" },
+    "night_guardian": { "trigger": "minecraft:impossible" },
+    "nullified_impact": { "trigger": "minecraft:impossible" },
+    "shrouded_existence": { "trigger": "minecraft:impossible" },
+    "sundering_strike": { "trigger": "minecraft:impossible" },
+    "twisted_lifeblood": { "trigger": "minecraft:impossible" },
+    "warped_ground": { "trigger": "minecraft:impossible" },
+    "weightless_flow": { "trigger": "minecraft:impossible" }
+  },
+  "requirements": [
+    ["arrow_dance"],
+    ["backward_drift"],
+    ["battle_fury"],
+    ["blazing_embrace"],
+    ["collector_gift"],
+    ["drowned_freedom"],
+    ["earth_order"],
+    ["echoing_wrath"],
+    ["feathered_grace"],
+    ["mountain_stance"],
+    ["night_guardian"],
+    ["nullified_impact"],
+    ["shrouded_existence"],
+    ["sundering_strike"],
+    ["twisted_lifeblood"],
+    ["warped_ground"],
+    ["weightless_flow"]
+  ]
+}

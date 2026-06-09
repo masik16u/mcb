@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mythic_charms:item/stone_page/base"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "mythic_charms:stone_page_texture": 0.1
+      },
+      "model": "mythic_charms:item/stone_page/combination"
+    },
+    {
+      "predicate": {
+        "mythic_charms:stone_page_texture": 0.2
+      },
+      "model": "mythic_charms:item/stone_page/token"
+    },
+    {
+      "predicate": {
+        "mythic_charms:stone_page_texture": 0.3
+      },
+      "model": "mythic_charms:item/stone_page/guide"
+    }
+  ]
+}

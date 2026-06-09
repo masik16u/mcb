@@ -1,0 +1,32 @@
+{
+  "parent": "mythic_charms:story/diamond_tablet",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:netherite_tablet"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.netherite_tablet.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.netherite_tablet.description"
+    },
+    "frame": "goal"
+  },
+  "criteria": {
+    "netherite_tablet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:netherite_tablet"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "netherite_tablet"
+    ]
+  ]
+}

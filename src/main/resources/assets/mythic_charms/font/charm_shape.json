@@ -1,0 +1,21 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "mythic_charms:font/tiles.png",
+      "ascent": 5,
+      "height": 5,
+      "chars": [
+        "\uE000\uE001\uE002\uE003\uE004",
+        "\uE005\uE006\uE007\uE008\uE009",
+        "\uE00A\uE00B\uE00C\uE00D\uE00E",
+        "\uE00F\uE010\uE011\uE012\uE013",
+        "\uE014\uE015\uE016\uE017\uE018"
+      ]
+    },
+    {
+      "type": "space",
+      "advances": { "\uE100": -6, "\uE101": 2 }
+    }
+  ]
+}

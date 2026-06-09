@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amethyst_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mythic_charms:amethyst_core"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mythic_charms:diamond_tablet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_amethyst_core"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mythic_charms:diamond_tablet"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "targets": "mythic_charms:netherite_tablet",
+  "components": {
+    "mythic_charms:tablet_grid": {
+      "shape": "1111100000000000000011111",
+      "acceptable_items_tag": "mythic_charms:tablet_acceptable"
+    }
+  }
+}

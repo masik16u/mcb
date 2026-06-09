@@ -1,0 +1,27 @@
+{
+  "parent": "mythic_charms:story/drowned_freedom_speed",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:charm_of_earth_order"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.earth_order_blazing.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.earth_order_blazing.description"
+    },
+    "frame": "goal"
+  },
+  "criteria": {
+    "charcoal": { "trigger": "minecraft:impossible" },
+    "green_dye": { "trigger": "minecraft:impossible" },
+    "lime_dye": { "trigger": "minecraft:impossible" },
+    "chorus": { "trigger": "minecraft:impossible" }
+  },
+  "requirements": [
+    ["charcoal"],
+    ["green_dye"],
+    ["lime_dye"],
+    ["chorus"]
+  ]
+}

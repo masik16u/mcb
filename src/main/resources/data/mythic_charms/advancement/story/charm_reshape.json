@@ -1,0 +1,25 @@
+{
+  "parent": "mythic_charms:story/resonance_table",
+  "display": {
+    "icon": {
+      "id": "mythic_charms:diamond_core"
+    },
+    "title": {
+      "translate": "advancements.mythic_charms.story.charm_reshape.title"
+    },
+    "description": {
+      "translate": "advancements.mythic_charms.story.charm_reshape.description"
+    },
+    "frame": "goal"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "impossible"
+    ]
+  ]
+}

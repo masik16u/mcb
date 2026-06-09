@@ -1,0 +1,118 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:chests/puzzle_sets/puzzle_set_1"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:chests/puzzle_sets/puzzle_set_2"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:chests/puzzle_sets/puzzle_set_3"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:chests/puzzle_sets/puzzle_set_4"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:chests/puzzle_sets/puzzle_set_5"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:chests/puzzle_sets/puzzle_set_6"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:chests/puzzle_sets/puzzle_set_7"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:chests/puzzle_sets/puzzle_set_8"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:chests/puzzle_sets/puzzle_set_9"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:chests/puzzle_sets/puzzle_set_10"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:chests/puzzle_sets/puzzle_set_11"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "mythic_charms:chests/puzzle_sets/puzzle_set_12"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gray_candle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 5
+              },
+              "add": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:coal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 5
+              },
+              "add": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 4
+              },
+              "add": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
