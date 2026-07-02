@@ -18,7 +18,7 @@ public class CharmShapeHelper {
         int xOrigin = 4 - shapeComponent.yOrigin();
         int yOrigin = shapeComponent.xOrigin();
 
-        itemStack.set(ModDataComponentTypes.RESONANCE_SHAPE, new ResonanceShapeComponent(shape, xOrigin, yOrigin));
+        itemStack.set(ModDataComponentTypes.RESONANCE_SHAPE, new ResonanceShapeComponent(shape, xOrigin, yOrigin, true));
     }
 
     public static String rotateShapeMatrix(String shape) {

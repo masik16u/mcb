@@ -1,0 +1,9 @@
+{
+  "add": {
+    "mythic_charms:tablet_grid": {
+      "shape": "0000000000000000000000000",
+      "acceptable_items_tag": "mythic_charms:puzzle_acceptable",
+      "puzzle_box_loot": "mythic_charms:gameplay/puzzle_box_reward"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "add": {
+    "mythic_charms:shape_variants": {
+      "variants": [
+        {
+          "shape": "0000001010001000111000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000000011110101000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000001000011100101000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000010011100101000000",
+          "x_origin": 2,
+          "y_origin": 2
+        }
+      ]
+    },
+    "mythic_charms:resonance_shape": {
+      "shape": "0000001010001000111000000",
+      "x_origin": 2,
+      "y_origin": 2
+    },
+    "mythic_charms:resonance_constraints": {
+      "is_reforgeable": true,
+      "is_quick_reforgeable": true,
+      "is_rotatable": true,
+      "start_grid": "1111100100110110000001010",
+      "required_tiles": 6,
+      "required_material_tag": "mythic_charms:charm_reforge_material",
+      "must_be_joined": true
+    },
+    "mythic_charms:charm_abilities": {
+      "twisted_lifeblood": {
+        "invert_poison_and_regen": true,
+        "invert_heal_and_harm": true
+      }
+    },
+    "mythic_charms:charm_combinations": {
+    },
+    "mythic_charms:color": {
+      "rgb": 6088041
+    }
+  }
+}

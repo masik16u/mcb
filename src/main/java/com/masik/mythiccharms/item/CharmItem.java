@@ -1,23 +1,25 @@
 package com.masik.mythiccharms.item;
 
 import com.masik.mythiccharms.MythicCharms;
-import com.masik.mythiccharms.component.ModDataComponentTypes;
-import com.masik.mythiccharms.component.ResonanceShapeComponent;
-import com.masik.mythiccharms.component.ShapeVariantsComponent;
+import com.masik.mythiccharms.component.*;
 import com.masik.mythiccharms.util.CharmInfoHelper;
 import com.masik.mythiccharms.util.TextHelper;
 import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.component.type.NbtComponent;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.nbt.NbtByte;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtElement;
+import net.minecraft.nbt.NbtInt;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CharmItem extends Item {
@@ -61,20 +63,61 @@ public class CharmItem extends Item {
         if (itemStack.contains(ModDataComponentTypes.SHAPE_VARIANTS)) {
             ShapeVariantsComponent variantsComponent = itemStack.get(ModDataComponentTypes.SHAPE_VARIANTS);
             if (variantsComponent != null && !variantsComponent.generated()) {
-                ResonanceShapeComponent newShapeComponent = newRandomShape(itemStack, world, false);
-                itemStack.set(ModDataComponentTypes.RESONANCE_SHAPE, newShapeComponent);
-                ShapeVariantsComponent newVariantsComponent = new ShapeVariantsComponent(variantsComponent.variants(), true);
-                itemStack.set(ModDataComponentTypes.SHAPE_VARIANTS, newVariantsComponent);
+                rebuildComponents(itemStack, world);
             }
         }
     }
 
-    @Override
-    public void onCraft(ItemStack itemStack, World world) {
-        super.onCraft(itemStack, world);
+//    @Override
+//    public void onCraft(ItemStack itemStack, World world) {
+//        super.onCraft(itemStack, world);
+//
+//        rebuildComponents(itemStack, world);
+//    }
 
+    private static void rebuildComponents(ItemStack itemStack, World world) {
         ResonanceShapeComponent newShapeComponent = newRandomShape(itemStack, world, false);
         itemStack.set(ModDataComponentTypes.RESONANCE_SHAPE, newShapeComponent);
+        ShapeVariantsComponent variantsComponent = itemStack.get(ModDataComponentTypes.SHAPE_VARIANTS);
+        if (variantsComponent != null) {
+            ShapeVariantsComponent newVariantsComponent = new ShapeVariantsComponent(variantsComponent.variants(), true);
+            itemStack.set(ModDataComponentTypes.SHAPE_VARIANTS, newVariantsComponent);
+        }
+
+        // Rebuilding
+        ResonanceColorComponent colorComponent = itemStack.get(ModDataComponentTypes.RESONANCE_COLOR);
+        if (colorComponent != null) {
+            ResonanceColorComponent newColorComponent = new ResonanceColorComponent(colorComponent.rgb() - 1);
+            itemStack.set(ModDataComponentTypes.RESONANCE_COLOR, newColorComponent);
+        }
+        ResonanceConstraintsComponent constraintsComponent = itemStack.get(ModDataComponentTypes.RESONANCE_CONSTRAINTS);
+        if (constraintsComponent != null) {
+            ResonanceConstraintsComponent newConstraintsComponent = new ResonanceConstraintsComponent(
+                    constraintsComponent.isReforgeable(),
+                    constraintsComponent.isQuickReforgeable(),
+                    constraintsComponent.isRotatable(),
+                    constraintsComponent.startGrid(),
+                    constraintsComponent.requiredTiles(),
+                    constraintsComponent.requiredMaterialTag(),
+                    constraintsComponent.mustBeJoined(),
+                    true
+            );
+            itemStack.set(ModDataComponentTypes.RESONANCE_CONSTRAINTS, newConstraintsComponent);
+        }
+        NbtComponent abilitiesComponent = itemStack.get(ModDataComponentTypes.CHARM_ABILITIES);
+        if (abilitiesComponent != null) {
+            NbtCompound compound = abilitiesComponent.copyNbt();
+            compound.put("rebuilt", NbtByte.of(true));
+            NbtComponent newAbilitiesComponent = NbtComponent.of(compound);
+            itemStack.set(ModDataComponentTypes.CHARM_ABILITIES, newAbilitiesComponent);
+        }
+        NbtComponent combinationsComponent = itemStack.get(ModDataComponentTypes.CHARM_COMBINATIONS);
+        if (combinationsComponent != null) {
+            NbtCompound compound = combinationsComponent.copyNbt();
+            compound.put("rebuilt", NbtByte.of(true));
+            NbtComponent newCombinationsComponent = NbtComponent.of(compound);
+            itemStack.set(ModDataComponentTypes.CHARM_COMBINATIONS, newCombinationsComponent);
+        }
     }
 
     public static ResonanceShapeComponent newRandomShape(ItemStack itemStack, World world, boolean checkIfNew) {

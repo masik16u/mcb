@@ -1,0 +1,57 @@
+{
+  "add": {
+    "mythic_charms:shape_variants": {
+      "variants": [
+        {
+          "shape": "0000000110011100000000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000100011000110000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000110001000110000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000000110011000100000000",
+          "x_origin": 2,
+          "y_origin": 2
+        }
+      ]
+    },
+    "mythic_charms:resonance_shape": {
+      "shape": "0000000110011100000000000",
+      "x_origin": 2,
+      "y_origin": 2
+    },
+    "mythic_charms:resonance_constraints": {
+      "is_reforgeable": true,
+      "is_quick_reforgeable": true,
+      "is_rotatable": true,
+      "start_grid": "1100011001110111001100011",
+      "required_tiles": 5,
+      "required_material_tag": "mythic_charms:charm_reforge_material",
+      "must_be_joined": true
+    },
+    "mythic_charms:charm_abilities": {
+      "earth_order": {
+        "require_barehanded": true,
+        "mining_speed_multiplier": 3.5
+      }
+    },
+    "mythic_charms:charm_combinations": {
+      "blazing_embrace": {
+        "require_adjacent": true,
+        "require_barehanded": true
+      }
+    },
+    "mythic_charms:color": {
+      "rgb": 15583304
+    }
+  }
+}

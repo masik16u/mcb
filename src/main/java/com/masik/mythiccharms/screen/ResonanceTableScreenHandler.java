@@ -493,7 +493,7 @@ public class ResonanceTableScreenHandler extends ScreenHandler {
                 .orElse(filled.getFirst());
 
         if (!player.getWorld().isClient) {
-            itemStack.set(ModDataComponentTypes.RESONANCE_SHAPE, new ResonanceShapeComponent(shape, origin.x, origin.y));
+            itemStack.set(ModDataComponentTypes.RESONANCE_SHAPE, new ResonanceShapeComponent(shape, origin.x, origin.y, true));
         }
 
         AdvancementHelper.grantAdvancement(player, "mythic_charms:story/charm_reshape", "impossible");

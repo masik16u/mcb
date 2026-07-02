@@ -20,7 +20,10 @@ public class MountainStanceLivingMixin {
     @WrapMethod(method = "takeKnockback")
     private void mountainStance(double strength, double x, double z, Operation<Void> original) {
         LivingEntity entity = (LivingEntity) (Object) this;
-        if (!(entity instanceof PlayerEntity)) return;
+        if (!(entity instanceof PlayerEntity)) {
+            original.call(strength, x, z);
+            return;
+        }
 
         CharmEntry entry = CharmInfoHelper.getCharmWithAbility(entity, "mountain_stance");
         if (entry == null) {

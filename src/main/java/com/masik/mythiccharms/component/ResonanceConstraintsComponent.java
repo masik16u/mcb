@@ -5,7 +5,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.network.codec.PacketCodec;
 
-public record ResonanceConstraintsComponent(boolean isReforgeable, boolean isQuickReforgeable, boolean isRotatable, String startGrid, int requiredTiles, String requiredMaterialTag, boolean mustBeJoined) {
+public record ResonanceConstraintsComponent(boolean isReforgeable, boolean isQuickReforgeable, boolean isRotatable, String startGrid, int requiredTiles, String requiredMaterialTag, boolean mustBeJoined, boolean rebuilt) {
     public static final Codec<ResonanceConstraintsComponent> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.BOOL.optionalFieldOf("is_reforgeable", true).forGetter(ResonanceConstraintsComponent::isReforgeable),
             Codec.BOOL.optionalFieldOf("is_quick_reforgeable", true).forGetter(ResonanceConstraintsComponent::isQuickReforgeable),
@@ -13,7 +13,8 @@ public record ResonanceConstraintsComponent(boolean isReforgeable, boolean isQui
             Codec.STRING.optionalFieldOf("start_grid", "0000000000000000000000000").forGetter(ResonanceConstraintsComponent::startGrid),
             Codec.INT.optionalFieldOf("required_tiles", 0).forGetter(ResonanceConstraintsComponent::requiredTiles),
             Codec.STRING.optionalFieldOf("required_material_tag", "mythic_charms:charm_reforge_material").forGetter(ResonanceConstraintsComponent::requiredMaterialTag),
-            Codec.BOOL.optionalFieldOf("must_be_joined", true).forGetter(ResonanceConstraintsComponent::mustBeJoined)
+            Codec.BOOL.optionalFieldOf("must_be_joined", true).forGetter(ResonanceConstraintsComponent::mustBeJoined),
+            Codec.BOOL.optionalFieldOf("rebuilt", false).forGetter(ResonanceConstraintsComponent::rebuilt)
     ).apply(instance, ResonanceConstraintsComponent::new));
 
 //    public static final PacketCodec<ByteBuf, ResonanceConstraintsComponent> PACKET_CODEC = PacketCodec.tuple(
@@ -37,6 +38,7 @@ public record ResonanceConstraintsComponent(boolean isReforgeable, boolean isQui
                         buf.writeInt(value.requiredTiles());
                         buf.writeString(value.requiredMaterialTag());
                         buf.writeBoolean(value.mustBeJoined());
+                        buf.writeBoolean(value.rebuilt());
                     },
                     buf -> new ResonanceConstraintsComponent(
                             buf.readBoolean(),
@@ -45,6 +47,7 @@ public record ResonanceConstraintsComponent(boolean isReforgeable, boolean isQui
                             buf.readString(),
                             buf.readInt(),
                             buf.readString(),
+                            buf.readBoolean(),
                             buf.readBoolean()
                     )
             );

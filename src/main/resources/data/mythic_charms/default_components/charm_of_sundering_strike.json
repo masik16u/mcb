@@ -1,0 +1,56 @@
+{
+  "add": {
+    "mythic_charms:shape_variants": {
+      "variants": [
+        {
+          "shape": "0000000000001000101000100",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000001100001000001000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000001000001100001000000",
+          "x_origin": 2,
+          "y_origin": 2
+        },
+        {
+          "shape": "0000001100001000100000000",
+          "x_origin": 2,
+          "y_origin": 2
+        }
+      ]
+    },
+    "mythic_charms:resonance_shape": {
+      "shape": "0000000000001000101000100",
+      "x_origin": 2,
+      "y_origin": 2
+    },
+    "mythic_charms:resonance_constraints": {
+      "is_reforgeable": true,
+      "is_quick_reforgeable": true,
+      "is_rotatable": true,
+      "start_grid": "1111101001100011001011111",
+      "required_tiles": 4,
+      "required_material_tag": "mythic_charms:charm_reforge_material",
+      "must_be_joined": true
+    },
+    "mythic_charms:charm_abilities": {
+      "sundering_strike": {
+        "require_crit": true,
+        "knockback_multiplier": 1.2
+      }
+    },
+    "mythic_charms:charm_combinations": {
+      "mountain_stance": {
+        "require_adjacent": true
+      }
+    },
+    "mythic_charms:color": {
+      "rgb": 16736592
+    }
+  }
+}

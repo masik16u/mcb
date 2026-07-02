@@ -8,6 +8,8 @@ import com.masik.mythiccharms.util.CharmEntry;
 import com.masik.mythiccharms.util.CharmInfoHelper;
 import com.masik.mythiccharms.util.NbtHelper;
 import net.minecraft.block.Block;
+import net.minecraft.component.type.NbtComponent;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -15,6 +17,7 @@ import net.minecraft.loot.LootTable;
 import net.minecraft.loot.context.LootContextParameterSet;
 import net.minecraft.loot.context.LootContextParameters;
 import net.minecraft.loot.context.LootContextTypes;
+import net.minecraft.nbt.NbtByte;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -29,6 +32,7 @@ import net.minecraft.world.World;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class PuzzleBoxItem extends Item {
     public PuzzleBoxItem(Settings settings) {
@@ -69,9 +73,26 @@ public class PuzzleBoxItem extends Item {
         return TypedActionResult.success(box, world.isClient());
     }
 
+    @Override
+    public void inventoryTick(ItemStack itemStack, World world, Entity entity, int slot, boolean selected) {
+        super.inventoryTick(itemStack, world, entity, slot, selected);
+
+        if (itemStack.contains(ModDataComponentTypes.TABLET_GRID)) {
+            NbtComponent gridComponent = itemStack.get(ModDataComponentTypes.TABLET_GRID);
+            if (gridComponent != null && !gridComponent.contains("rebuilt")) {
+                NbtCompound compound = gridComponent.copyNbt();
+                compound.put("rebuilt", NbtByte.of(true));
+                NbtComponent newCombinationsComponent = NbtComponent.of(compound);
+                itemStack.set(ModDataComponentTypes.TABLET_GRID, newCombinationsComponent);
+            }
+        }
+    }
+
     public static boolean isFull(ItemStack itemStack, World world) {
         NbtCompound nbtCompound = NbtHelper.getNbtCompound(itemStack, ModDataComponentTypes.TABLET_GRID);
-        List<String> matrix = Arrays.asList(nbtCompound.getString("shape").split(""));
+        String rawShape = nbtCompound.getString("shape");
+        List<String> matrix = rawShape.chars().mapToObj(ch -> String.valueOf((char) ch))
+                .collect(Collectors.toCollection(ArrayList::new));
 
         List<CharmEntry> pieces = CharmInfoHelper.getEquippedCharms(itemStack, world.getRegistryManager());
         for (CharmEntry entry : pieces) {
@@ -82,7 +103,8 @@ public class PuzzleBoxItem extends Item {
                     CharmInfoHelper.getShapeComponentOrThrow(
                             "ResonanceTableScreenHandler$getMatrix", entry.itemStack());
 
-            List<String> shape = new ArrayList<>(Arrays.asList(shapeComponent.shape().split("")));
+            List<String> shape = shapeComponent.shape().chars().mapToObj(ch -> String.valueOf((char) ch))
+                    .collect(Collectors.toCollection(ArrayList::new));
             int xOrigin = shapeComponent.xOrigin();
             int yOrigin = shapeComponent.yOrigin();
 
