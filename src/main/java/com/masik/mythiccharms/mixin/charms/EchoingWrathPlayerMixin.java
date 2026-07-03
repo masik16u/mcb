@@ -1,20 +1,18 @@
 package com.masik.mythiccharms.mixin.charms;
 
-import com.masik.mythiccharms.MythicCharms;
 import com.masik.mythiccharms.component.ModDataComponentTypes;
 import com.masik.mythiccharms.util.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.TypeFilter;
 import net.minecraft.util.math.Box;
+import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -111,38 +109,19 @@ public class EchoingWrathPlayerMixin {
         AdvancementHelper.grantAdvancement(player, "mythic_charms:story/all_charm_abilities", "echoing_wrath");
 
         // Challenge
-        if (containsAllTypes(livingEntities)) {
+        if (containsAllTypes(livingEntities, player.getWorld())) {
             AdvancementHelper.grantAdvancement(player, "mythic_charms:story/echoing_wrath_blazing", "impossible");
         }
     }
 
     @Unique
-    private static final List<EntityType<?>> DROP_COOKED_FOOD = List.of(
-            EntityType.ZOMBIE,
-            EntityType.ZOMBIE_VILLAGER,
-            EntityType.HUSK,
-            EntityType.CHICKEN,
-            EntityType.SHEEP,
-            EntityType.COW,
-            EntityType.MOOSHROOM,
-            EntityType.RABBIT,
-            EntityType.PIG,
-            EntityType.HOGLIN,
-            EntityType.COD,
-            EntityType.SALMON,
-            EntityType.DOLPHIN,
-            EntityType.GUARDIAN,
-            EntityType.ELDER_GUARDIAN,
-            EntityType.POLAR_BEAR
-    );
-
-    @Unique
-    private static boolean containsAllTypes(List<LivingEntity> entities) {
+    private static boolean containsAllTypes(List<LivingEntity> entities, World world) {
         Set<EntityType<?>> presentTypes = entities.stream()
                 .map(Entity::getType)
                 .collect(Collectors.toSet());
 
-        return presentTypes.containsAll(DROP_COOKED_FOOD);
+        List<EntityType<?>> entityTypes = TagHelper.getEntitiesFromTag(world, ModTags.ADVANCEMENT_DROP_COOKED_FOOD);
+        return presentTypes.containsAll(entityTypes);
     }
 
 }

@@ -122,10 +122,16 @@ public class CharmItem extends Item {
 
     public static ResonanceShapeComponent newRandomShape(ItemStack itemStack, World world, boolean checkIfNew) {
         ResonanceShapeComponent currentShapeComponent = CharmInfoHelper.getShapeComponentOrThrow("CharmItem$randomShape", itemStack);
+        ResonanceShapeComponent rebuiltShapeComponent = new ResonanceShapeComponent(
+                currentShapeComponent.shape(),
+                currentShapeComponent.xOrigin(),
+                currentShapeComponent.yOrigin(),
+                true
+        );
         ShapeVariantsComponent variantsComponent = itemStack.get(ModDataComponentTypes.SHAPE_VARIANTS);
 
         if (variantsComponent == null || variantsComponent.variants().isEmpty()) {
-            return currentShapeComponent;
+            return rebuiltShapeComponent;
         }
 
         List<ResonanceShapeComponent> filteredList = variantsComponent.variants().stream()
@@ -133,7 +139,7 @@ public class CharmItem extends Item {
 
 //        itemStack.remove(ModDataComponentTypes.SHAPE_VARIANTS);
         if (filteredList.isEmpty()) {
-            return currentShapeComponent;
+            return rebuiltShapeComponent;
         }
         return filteredList.get(world.random.nextInt(filteredList.size()));
     }

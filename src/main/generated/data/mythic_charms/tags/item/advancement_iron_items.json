@@ -1,0 +1,20 @@
+{
+  "values": [
+    "minecraft:iron_ingot",
+    "minecraft:iron_nugget",
+    "minecraft:iron_helmet",
+    "minecraft:iron_chestplate",
+    "minecraft:iron_leggings",
+    "minecraft:iron_boots",
+    "minecraft:iron_block",
+    "minecraft:iron_bars",
+    "minecraft:shears",
+    "minecraft:cauldron",
+    "minecraft:minecart",
+    "minecraft:bucket",
+    "minecraft:heavy_weighted_pressure_plate",
+    "minecraft:iron_door",
+    "minecraft:iron_trapdoor",
+    "minecraft:chain"
+  ]
+}

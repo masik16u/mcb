@@ -14,5 +14,6 @@ public class MythicCharmsDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModBlockTagProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
+		pack.addProvider(ModEntityTypeTagProvider::new);
 	}
 }

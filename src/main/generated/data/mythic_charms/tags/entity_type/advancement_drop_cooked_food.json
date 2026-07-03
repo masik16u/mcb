@@ -1,0 +1,20 @@
+{
+  "values": [
+    "minecraft:zombie",
+    "minecraft:zombie_villager",
+    "minecraft:husk",
+    "minecraft:chicken",
+    "minecraft:sheep",
+    "minecraft:cow",
+    "minecraft:mooshroom",
+    "minecraft:rabbit",
+    "minecraft:pig",
+    "minecraft:hoglin",
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:dolphin",
+    "minecraft:guardian",
+    "minecraft:elder_guardian",
+    "minecraft:polar_bear"
+  ]
+}

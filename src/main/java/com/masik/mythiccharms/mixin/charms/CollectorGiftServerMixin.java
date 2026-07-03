@@ -1,19 +1,15 @@
 package com.masik.mythiccharms.mixin.charms;
 
-import com.masik.mythiccharms.MythicCharms;
 import com.masik.mythiccharms.component.ModDataComponentTypes;
-import com.masik.mythiccharms.util.AdvancementHelper;
-import com.masik.mythiccharms.util.CharmEntry;
-import com.masik.mythiccharms.util.CharmInfoHelper;
-import com.masik.mythiccharms.util.NbtHelper;
+import com.masik.mythiccharms.util.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -62,38 +58,19 @@ public class CollectorGiftServerMixin {
             AdvancementHelper.grantAdvancement(player, "mythic_charms:story/all_charm_combos", "cg_wf");
         }
         AdvancementHelper.grantAdvancement(player, "mythic_charms:story/all_charm_abilities", "collector_gift");
-        if (containsAllItems(itemEntities)) {
+        if (containsAllItems(itemEntities, player.getWorld())) {
             AdvancementHelper.grantAdvancement(player, "mythic_charms:story/collector_gift_magnet", "impossible");
         }
     }
 
     @Unique
-    private static final List<Item> IRON_ITEMS = List.of(
-            Items.IRON_INGOT,
-            Items.IRON_NUGGET,
-            Items.IRON_HELMET,
-            Items.IRON_CHESTPLATE,
-            Items.IRON_LEGGINGS,
-            Items.IRON_BOOTS,
-            Items.IRON_BLOCK,
-            Items.IRON_BARS,
-            Items.SHEARS,
-            Items.CAULDRON,
-            Items.MINECART,
-            Items.BUCKET,
-            Items.HEAVY_WEIGHTED_PRESSURE_PLATE,
-            Items.IRON_DOOR,
-            Items.IRON_TRAPDOOR,
-            Items.CHAIN
-    );
-
-    @Unique
-    private static boolean containsAllItems(List<ItemEntity> entities) {
+    private static boolean containsAllItems(List<ItemEntity> entities, World world) {
         Set<Item> presentItems = entities.stream()
                 .map(entity -> entity.getStack().getItem())
                 .collect(Collectors.toSet());
 
-        return presentItems.containsAll(IRON_ITEMS);
+        List<Item> items = TagHelper.getItemsFromTag(world, ModTags.ADVANCEMENT_IRON_ITEMS);
+        return presentItems.containsAll(items);
     }
 
 }

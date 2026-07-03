@@ -2,9 +2,8 @@ package com.masik.mythiccharms.mixin.charms;
 
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.llamalad7.mixinextras.sugar.Local;
-import com.masik.mythiccharms.util.AdvancementHelper;
-import com.masik.mythiccharms.util.CharmEntry;
-import com.masik.mythiccharms.util.CharmInfoHelper;
+import com.masik.mythiccharms.MythicCharms;
+import com.masik.mythiccharms.util.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.TripwireBlock;
 import net.minecraft.entity.Entity;
@@ -60,18 +59,14 @@ public class EarthOrderBlockMixin {
 
         AdvancementHelper.grantAdvancement(player, "mythic_charms:story/all_charm_combos", "eo_be");
 
+        // Goal
         List<Item> items = list.stream().map(ItemStack::getItem).distinct().toList();
-        if (items.contains(Items.CHARCOAL)) {
-            AdvancementHelper.grantAdvancement(player, "mythic_charms:story/earth_order_blazing", "charcoal");
-        }
-        if (items.contains(Items.GREEN_DYE)) {
-            AdvancementHelper.grantAdvancement(player, "mythic_charms:story/earth_order_blazing", "green_dye");
-        }
-        if (items.contains(Items.LIME_DYE)) {
-            AdvancementHelper.grantAdvancement(player, "mythic_charms:story/earth_order_blazing", "lime_dye");
-        }
-        if (items.contains(Items.POPPED_CHORUS_FRUIT)) {
-            AdvancementHelper.grantAdvancement(player, "mythic_charms:story/earth_order_blazing", "chorus");
+        List<Item> advancementItems = TagHelper.getItemsFromTag(world, ModTags.ADVANCEMENT_SMELT_RESULTS);
+        for (Item item : advancementItems) {
+            if (items.contains(item)) {
+                AdvancementHelper.grantAdvancement(player, "mythic_charms:story/earth_order_blazing",
+                        item.toString().replace("minecraft:", ""));
+            }
         }
 
         return list;

@@ -4,22 +4,18 @@ import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.llamalad7.mixinextras.sugar.Local;
 import com.masik.mythiccharms.MythicCharms;
 import com.masik.mythiccharms.accessor.ArrowDanceAccessor;
-import com.masik.mythiccharms.util.AdvancementHelper;
-import com.masik.mythiccharms.util.CharmEntry;
-import com.masik.mythiccharms.util.CharmInfoHelper;
+import com.masik.mythiccharms.util.*;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ProjectileDeflection;
-import net.minecraft.entity.boss.dragon.EnderDragonEntity;
 import net.minecraft.entity.mob.*;
-import net.minecraft.entity.passive.LlamaEntity;
-import net.minecraft.entity.passive.SnowGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.*;
-import net.minecraft.entity.projectile.thrown.PotionEntity;
-import net.minecraft.entity.projectile.thrown.SnowballEntity;
 import net.minecraft.nbt.NbtCompound;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+
+import java.util.List;
 
 @Mixin(Entity.class)
 public class ArrowDanceEntityMixin {
@@ -45,39 +41,18 @@ public class ArrowDanceEntityMixin {
         // Challenge
         Entity owner = projectileEntity.getOwner();
         if (owner instanceof MobEntity) {
-            if (projectileEntity instanceof ArrowEntity) {
-                AdvancementHelper.grantAdvancement(player, "mythic_charms:story/arrow_dance_reflect", "arrow");
+
+            List<EntityType<?>> entityTypes = TagHelper.getEntitiesFromTag(player.getWorld(), ModTags.ADVANCEMENT_PROJECTILES);
+            for (EntityType<?> entityType : entityTypes) {
+
+                EntityType<?> projectileEntityType = projectileEntity.getType();
+
+                if (projectileEntityType == entityType) {
+                    AdvancementHelper.grantAdvancement(player, "mythic_charms:story/arrow_dance_reflect",
+                            projectileEntityType.toString().replace("entity.minecraft.", ""));
+                }
             }
-            else if (projectileEntity instanceof FireballEntity) {
-                AdvancementHelper.grantAdvancement(player, "mythic_charms:story/arrow_dance_reflect", "fireball");
-            }
-            else if (projectileEntity instanceof SmallFireballEntity) {
-                AdvancementHelper.grantAdvancement(player, "mythic_charms:story/arrow_dance_reflect", "small_fireball");
-            }
-            else if (projectileEntity instanceof DragonFireballEntity) {
-                AdvancementHelper.grantAdvancement(player, "mythic_charms:story/arrow_dance_reflect", "dragon_fireball");
-            }
-            else if (projectileEntity instanceof LlamaSpitEntity) {
-                AdvancementHelper.grantAdvancement(player, "mythic_charms:story/arrow_dance_reflect", "llama_spit");
-            }
-            else if (projectileEntity instanceof ShulkerBulletEntity) {
-                AdvancementHelper.grantAdvancement(player, "mythic_charms:story/arrow_dance_reflect", "shulker_bullet");
-            }
-            else if (projectileEntity instanceof SnowballEntity) {
-                AdvancementHelper.grantAdvancement(player, "mythic_charms:story/arrow_dance_reflect", "snowball");
-            }
-            else if (projectileEntity instanceof PotionEntity) {
-                AdvancementHelper.grantAdvancement(player, "mythic_charms:story/arrow_dance_reflect", "potion");
-            }
-            else if (projectileEntity instanceof TridentEntity) {
-                AdvancementHelper.grantAdvancement(player, "mythic_charms:story/arrow_dance_reflect", "trident");
-            }
-            else if (projectileEntity instanceof BreezeWindChargeEntity) {
-                AdvancementHelper.grantAdvancement(player, "mythic_charms:story/arrow_dance_reflect", "wind_charge");
-            }
-            else if (projectileEntity instanceof WitherSkullEntity) {
-                AdvancementHelper.grantAdvancement(player, "mythic_charms:story/arrow_dance_reflect", "wither_skull");
-            }
+
         }
 
         AdvancementHelper.grantAdvancement(player, "mythic_charms:story/all_charm_combos", "ad_ms");

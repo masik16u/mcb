@@ -16,12 +16,14 @@
     "charcoal": { "trigger": "minecraft:impossible" },
     "green_dye": { "trigger": "minecraft:impossible" },
     "lime_dye": { "trigger": "minecraft:impossible" },
-    "chorus": { "trigger": "minecraft:impossible" }
+    "popped_chorus_fruit": { "trigger": "minecraft:impossible" },
+    "dried_kelp": { "trigger": "minecraft:impossible" }
   },
   "requirements": [
     ["charcoal"],
     ["green_dye"],
     ["lime_dye"],
-    ["chorus"]
+    ["popped_chorus_fruit"],
+    ["dried_kelp"]
   ]
 }
