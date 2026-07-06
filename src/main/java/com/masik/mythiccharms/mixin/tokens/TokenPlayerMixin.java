@@ -53,7 +53,7 @@ public class TokenPlayerMixin {
     @Inject(method = "jump", at = @At("RETURN"))
     private void dustyCloud(CallbackInfo ci) {
         PlayerEntity player = (PlayerEntity) (Object) this;
-        if (player.getWorld().isClient) return;
+//        if (player.getWorld().isClient) return;
 
         CharmEntry entry = CharmInfoHelper.getCharmWithAbility(player, "dusty_cloud");
         if (entry == null) return;

@@ -68,7 +68,7 @@ public class ModItems {
     public static final Item TOTEM_OF_PRESERVATION = registerItem("totem_of_preservation", new Item(new Item.Settings().maxDamage(128)));
 //    public static final Item RESONANCE_KEY = dummyItem("resonance_key");
     public static final Item PUZZLE_BOX = registerItem("puzzle_box", new PuzzleBoxItem(new Item.Settings().maxCount(1)));
-    public static final Item PUZZLE_PIECE = registerItem("puzzle_piece", new ScriptItem(new Item.Settings()));
+    public static final Item PUZZLE_PIECE = registerItem("puzzle_piece", new PuzzlePieceItem(new Item.Settings()));
     public static final Item STONE_PAGE = registerItem("stone_page", new StonePageItem(new Item.Settings()));
 
 
